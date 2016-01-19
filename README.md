@@ -89,6 +89,7 @@ The configuration object is passed as the second argument to the function. Follo
   - *level*: Add log level prefix
 - **staticPrefixes**: An array of strings that should be added after dynamic prefixes (E.g. 'foo'). Defaults to none.
 - **separator**: String used to separate prefixes. Defaults to single whitespace (` `).
+- **joinFunction**: Custom function used for joining prefix with message and calling log-function. Is called with signature `(fn_method_raw, prefix, message).
 - **options**: Options for dynamic prefixes. Available options are:
   - *timestamp*: An object of properties for date formatting. Available properties are: *locale*, *timezone* and *hour12*. Defaults to `{hour12: false}`-
 
